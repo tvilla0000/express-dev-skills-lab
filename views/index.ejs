@@ -1,0 +1,23 @@
+<%- include('./partials/header'); %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Dev Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <ul>
+      <% skills.forEach(function(skill, idx) { %>
+
+      <%- include('showSkill', {
+        skill: skill,
+        idx: idx
+      }) %>
+
+      <% }) %>
+
+    </ul>
+
+    
+  </body>
+</html>

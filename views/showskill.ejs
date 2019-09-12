@@ -1,0 +1,15 @@
+
+<li>
+    <form action="/skills/<%= idx %>?_method=DELETE" method="POST" class="delete-form">
+      
+      <a href="/skills/<%= idx %>">
+        
+        <li><%= skill.skill %></li>
+        <li><%= skill.description %></li>
+        <li><%= skill.level %></li>
+      </a>
+      
+      <button type= "submit" id="showbtn">Delete</button>
+    </form>
+  </li>
+
